@@ -1,0 +1,228 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+  @font-face {
+    font-family: "George";
+    src: url("../Fonts/GeorgeNeue.otf");
+  }
+ 
+  @font-face {
+    font-family: "Montas";
+    src: url("../Fonts/Montas-Regular.otf");
+  }
+ 
+  @font-face {
+    font-family: "Probo";
+    src: url(../Fonts/PPObjectSans-Regular.woff);
+  }
+  @font-face {
+    font-family: "Juli";
+    src: url('../Fonts/Julitho\ Regular.ttf');
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    height: 5vh;
+  
+  }
+  
+  .nav_items {
+    margin: 20px 20px 0;
+    width: 40%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+  
+  }
+  
+  header .material-symbols-outlined {
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    color: #002333;
+  
+  }
+  
+  header .material-symbols-outlined:hover {
+    fill: #C7CFD9;
+    color: #636363;
+    cursor: pointer;
+  }
+  
+  .nav_items a {
+    text-decoration: none;
+    font-family: "Probo";
+    color: #002333;
+  }
+  
+  .nav_items a:hover {
+    color: #636363;
+  }
+
+  .head{
+    margin-top: 20px;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .head h1{
+    font-family: "Juli";
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 5rem;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .three{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .tsub{
+    width: 33.3%;
+    height: 100%;
+    border: 1px solid grey;
+    text-align: justify;
+  }
+  .tsub img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .two{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .tf{
+    width: 66.6%;
+    height: 100%;
+    border: 1px solid grey;
+  }
+  .tf img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .ts{
+    width: 33.3%;
+    height: 100%;
+    border: 1px solid grey;
+  }
+  .ts img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hehe{
+    font-family: "George";
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 400;
+  }
+  .btn{
+    padding: 5px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-family: "George";
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  .btn:hover{
+    background-color: #002333;
+    color: #fff;
+  }
+  .tsub p{
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .cart{
+    font-size: 1.4rem;
+    position: relative;
+    bottom: -123px;
+    left: 10px;
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .cart:hover{
+    background: #002333;
+    color: #fff;
+  }
+  footer {
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: 170vh;
+    padding-top: 3px;
+    background-color: rgb(20, 18, 18);
+    color: #ffffff;
+  }
+ 
+  footer ul {
+    margin: 60px 3% 0;
+    list-style: none;
+  }
+ 
+  footer ul li {
+    margin-top: 25px;
+    font-size: 2rem;
+    font-family: "George";
+  }
+ 
+  footer ul li .material-symbols-outlined {
+    position: relative;
+    left: -0px;
+    transform: scale(1.3);
+    opacity: 1;
+    background-color: transparent;
+    border: none;
+    transition: all .3s ease-in-out;
+    color: #ffffff;
+  }
+ 
+  footer ul li .material-symbols-outlined:hover {
+    color: #727272;
+    cursor: pointer;
+  }
+ 
+  footer .copyright {
+    position: relative;
+    top: 3vh;
+    text-align: center;
+    font-family: "Montas";
+    margin-bottom: 0;
+  }
+ 
+ 
+  ul.transition {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+ 
+  ul.transition li {
+    list-style: none;
+    transform: scaleY(0);
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+  }
+ 
+  button{
+   cursor: pointer;
+  }

@@ -1,0 +1,441 @@
+@font-face {
+  font-family: "George";
+  src: url("../Fonts/GeorgeNeue.otf");
+}
+
+@font-face {
+  font-family: "Probo";
+  src: url(../Fonts/PPObjectSans-Regular.woff);
+}
+
+@font-face {
+  font-family: "Montas";
+  src: url("../Fonts/Montas-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FEFFFE;
+}
+
+header {
+  height: 5vh;
+
+}
+
+.nav_items {
+  margin: 20px 20px 0;
+  width: 40%;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  justify-content: space-between;
+
+}
+
+.nav_items a {
+  text-decoration: none;
+  font-family: "Probo";
+  color: #40313C;
+}
+
+.main_pg {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #FEFFFE
+}
+
+.capsule {
+  width: 20vw;
+  height: 55vh;
+  border-radius: 150px;
+  position: relative;
+  top: 20vh;
+  left: 10vw;
+  overflow: clip;
+  background: transparent;
+}
+
+.capsule img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capsule2 {
+  width: 20vw;
+  height: 55vh;
+  border-radius: 150px;
+  background: transparent;
+  position: relative;
+  top: -50vh;
+  left: 70vw;
+  overflow: hidden;
+
+}
+
+.capsule2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: transparent;
+}
+
+.capsule3 {
+  width: 20vw;
+  height: 55vh;
+  background: transparent;
+  border-radius: 150px;
+  position: relative;
+  top: -40vh;
+  right: -40vw;
+  overflow: clip;
+}
+
+.capsule3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  font-size: 5rem;
+  font-family: "Montas";
+  text-align: center;
+  position: relative;
+  top: -150vh;
+  line-height: 5rem;
+}
+
+.mid-sec {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 110vh;
+  background-color: #8B9C85;
+  z-index: -1;
+
+}
+
+.mid-sec p {
+  color: #DAE8D6;
+  font-size: 2rem;
+  font-family: "Montas";
+  text-align: center;
+  width: 70%;
+  position: relative;
+  top: 30vh;
+  left: 15%;
+}
+
+.mid-sec button {
+  position: relative;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 1.5rem;
+  font-family: "George";
+  background-color: #DAE8D6;
+  color: #8B385E;
+  border: 2px solid #8B385E;
+  border-radius: 40px;
+  transition: all .2s ease-in-out;
+}
+
+.mid-sec button:hover {
+  color: #DAE8D6;
+  background-color: #8B385E;
+  font-size: 1.6rem;
+  border-color: #DAE8D6;
+  cursor: pointer;
+}
+
+.products {
+  width: 65vw;
+  height: 80vh;
+  background-color: #FEFFFE;
+  position: absolute;
+  top: 230vh;
+  margin-left: 17.5vw;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subdiv {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.subdivs {
+  width: 32%;
+  height: 100%;
+
+}
+
+.subimg {
+  width: 100%;
+  height: 100%;
+  background-color: #8B9C85;
+  overflow: hidden;
+
+}
+
+.subimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1.5s ease-in-out;
+}
+
+.subimg img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.feat {
+  font-size: 2rem;
+  position: absolute;
+  top: 217vh;
+  margin-left: 17.5vw;
+  font-family: "George";
+  text-decoration: underline;
+}
+
+.another {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 330vh;
+}
+
+.ano1 {
+  width: 65%;
+  height: 80%;
+  margin: auto auto;
+  margin-top: 10vh;
+  background-color: #FBEDE3;
+  display: flex;
+}
+
+.ano {
+  width: 50%;
+  height: 100%;
+}
+
+.ano:nth-child(1) {
+  background-color: #8B9C85;
+}
+
+.ano-img {
+  width: 20vw;
+  height: 60vh;
+  background-color: #40313C;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ano-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ano p:nth-child(1) {
+  font-size: 3rem;
+  font-family: "Montas";
+  line-height: 3.5rem;
+  margin-top: 65px;
+  margin-left: 65px;
+}
+
+.ano p:nth-child(2) {
+  width: 20vw;
+  margin-left: 65px;
+  text-align: justify;
+  margin-top: 80px;
+  font-size: 1.3rem;
+  color: #DAE8D6;
+}
+
+.systum {
+  width: 65vw;
+  height: 45vh;
+  position: absolute;
+  top: 440vh;
+  left: 17.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sys {
+  width: 32%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sys img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+}
+
+.sys img:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+
+footer {
+  width: 100vw;
+  height: 40vh;
+  position: absolute;
+  top: 515vh;
+  background-color: #8B9C85;
+}
+
+footer ul {
+  margin: 60px 3% 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-top: 25px;
+  font-size: 2rem;
+  font-family: "George";
+}
+
+footer ul li .material-symbols-outlined {
+  position: relative;
+  top: 0px;
+  left: 5px;
+  transform: scale(1.3);
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  transition: all .3s ease-in-out;
+}
+
+footer ul li .material-symbols-outlined:hover {
+  color: rgb(223, 209, 188);
+  cursor: pointer;
+}
+
+footer .copyright {
+  position: relative;
+  top: 3vh;
+  text-align: center;
+  font-family: "George";
+}
+
+.star {
+  position: absolute;
+  top: 015vh;
+  left: 66vw;
+  width: 50px;
+}
+
+.star2 {
+  position: absolute;
+  top: 042vh;
+  left: 34vw;
+  width: 50px;
+}
+
+.flow {
+  width: 200px;
+  position: absolute;
+  top: 70vh;
+  left: 13vw;
+}
+
+.flow1 {
+  width: 200px;
+  position: absolute;
+  top: 55vh;
+  left: 75vw;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .flex{
+    width: 90%;
+    height: 50%;
+    position: relative;
+    top: 40%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-sub{
+    width: 32%;
+    height: 100%;
+    background-color: #FEFFFE;
+  }.flex-sub:nth-child(2)
+  {
+    background-color: #FBE6D4;
+  }
+  .flex-sub img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mid-img{
+    width: 40%;
+    height: 80%;
+    background-color: #C7CFD9;
+    position: relative;
+    top: 20%;
+    left: 30%;
+  }
+  .mid-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 200px black);
+  } */

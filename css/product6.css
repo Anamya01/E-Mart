@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "George";
+    src: url("../Fonts/GeorgeNeue.otf");
+  }
+ 
+  @font-face {
+    font-family: "Montas";
+    src: url("../Fonts/Montas-Regular.otf");
+  }
+ 
+  @font-face {
+    font-family: "Probo";
+    src: url(../Fonts/PPObjectSans-Regular.woff);
+  }
+ 
+ * {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  body {
+    /* background-color: rgb(223, 209, 188); */
+    background-color: #ffff;
+  }
+ 
+  header {
+    height: 5vh;
+ 
+  }
+ 
+  .nav_items {
+    margin: 20px 20px 0;
+    width: 40%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+ 
+  }
+ 
+  .nav_items a {
+    text-decoration: none;
+    font-family: "Probo";
+    color: #f26b4e;
+    /* color: rgb(86, 111, 112); */
+  }
+.pro{
+    width: 99vw;
+    height: 90vh;
+
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+}
+.img{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}.mini{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.bb{
+    width: 65%;
+    height: 15%;
+    background-color: aliceblue;
+    margin-right: 38px;
+
+}
+.bb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.main{
+  margin-left: -25px;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    background-color: #ffff;
+}
+.main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .7s all ease-in-out;
+    
+}
+.main img:hover{
+  
+  transform: scale(1.05);
+}
+.desc{
+    border-top: 2px solid black;
+    width: 43%;
+    height: 100%;
+    padding-top: 10px;
+
+}
+
+.desc h2{
+  font-family: "Montas";
+  font-size: 2.5rem;
+}
+.desc .discription{
+  font-size: 1.3rem;
+  font-family: "George";
+  margin-bottom: 20px;
+}
+.desc .price{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "George";
+  margin: 10px;
+  margin-left: 0;
+  color: green;
+}
+.desc .mrp{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "George";
+  margin: 10px;
+  margin-left: 0;
+}
+.desc .pseudo{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "George";
+  margin: 10px;
+  margin-left: 0;
+  color: red;
+  text-decoration: line-through;
+}
+.desc .color{
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-family: "George";
+}
+.desc .color input{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  margin-left: 0;
+
+}
+.desc .Size{
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-family: "George";
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.desc .Size p{
+  margin-bottom: 5px;
+}
+.desc .Size .si{
+  display: flex;
+  flex-direction: row;
+}
+.smt{
+  width: 40px;
+  height: 20px;
+  margin: -7px;
+  border-radius: 3px;
+  padding: 5px;
+  padding-bottom: 10px;
+  border-radius: 25px ;
+  background-color: black;
+  color: #ffff;
+  border: 2px solid #ffff;
+}
+.desc .Size .si  span{
+  width: 40px;
+  height: 20px;
+  background-color: #ffff;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 5px;
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0);
+  padding-bottom: 10px;
+  cursor: pointer;
+  border-radius: 25px ;
+}
+
+.desc .add_cart{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.desc .add_cart button{
+  width: 250px;
+  height: 50px;
+  font-family: "George";
+  font-size: 1.3rem;
+  background-color: #f26b4e;
+  border: 1px solid #ffff;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.desc .add_cart button:nth-child(2){
+  width: 200px;
+  color: black;
+  border: 1px solid black;
+  background-color: #ffff;
+}
+.desc .coupon hr{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  opacity: 0.3;
+}
+.desc .coupon label{
+  font-size: 1.3rem;
+  font-family: "George";
+}
+
+.desc .coupon input{
+  width: 150px;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  border: 2px solid rgb(102, 102, 102);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.desc .coupon input::placeholder{
+  font-family: "George";
+  font-size: 1rem;
+  opacity: 0.5;
+}
+.desc .coupon button{
+  width: 34px;
+  border-radius: 3px;
+  height: 34px;
+  font-size: 1.3rem;
+  background-color: #f26b4e;
+  color: #ffff;
+  text-align: center;
+  border: 2px solid rgb(102, 102, 102);
+  margin-left: -10px;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.desc .dete{
+  font-size: 1.1rem;
+  font-family: "George";
+  opacity: .9;
+  color: rgb(0, 0, 0);
+}

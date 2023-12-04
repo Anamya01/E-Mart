@@ -1,0 +1,550 @@
+ /* colr : #F3ECE6; #40313C */
+
+
+
+ @font-face {
+   font-family: "George";
+   src: url("../Fonts/GeorgeNeue.otf");
+ }
+
+ @font-face {
+   font-family: "Montas";
+   src: url("../Fonts/Montas-Regular.otf");
+ }
+
+ @font-face {
+   font-family: "Probo";
+   src: url(../Fonts/PPObjectSans-Regular.woff);
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   background-color: #ffffff;
+   overflow-x: hidden;
+
+ }
+
+ header {
+   height: 5vh;
+
+ }
+
+ .nav_items {
+   margin: 20px 20px 0;
+   width: 40%;
+   display: flex;
+   text-align: center;
+   justify-content: flex-end;
+   justify-content: space-between;
+
+ }
+
+ .nav_items a {
+   text-decoration: none;
+   font-family: "Probo";
+   color: rgb(86, 111, 112);
+ }
+
+ header .material-symbols-outlined {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  color: #002333;
+  z-index: 900;
+
+}
+
+header .material-symbols-outlined:hover {
+  fill: #C7CFD9;
+  color: #636363;
+  cursor: pointer;
+}
+
+ .home_page {
+
+   width: 100vw;
+   height: calc(100vh - 5vh - 20px);
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   background-color: rgb(20, 18, 18);
+
+ }
+
+ .home_image {
+   width: 40.5%;
+   height: 80%;
+   margin: auto auto;
+   color: #ffffff;
+   font-family: "George";
+   position: relative;
+   background-color: rgb(20, 18, 18);
+   border-radius: 3px;
+ }
+
+ .home_image h2 {
+   font-size: 4rem;
+   line-height: 3rem;
+   letter-spacing: .3rem;
+   position: relative;
+   top: 40%;
+   font-family: "Montas";
+   font-weight: lighter;
+   margin-left: 10px;
+ }
+
+ .home_image p {
+   text-align: justify;
+   font-size: 1.5rem;
+   position: relative;
+   top: 45%;
+   font-weight: lighter;
+   margin: 0px 10px 10px;
+ }
+
+ .home_image_details {
+   width: 50%;
+   height: 100%;
+   background-color: #F3ECE6;
+    
+
+ }
+
+ .home_image_details img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+
+ }
+
+  .cart-container{
+    width: 400px;
+    min-height: 50vh;
+    max-height: 50vh;
+    position: fixed;
+    bottom: 20px;
+    right: -800px;
+    transform: translate( -100%, 0%);
+    background-color: #ffffff;
+    z-index: 100;
+    filter: drop-shadow(2px 2px 21px rgb(139, 139, 139));
+    transition: all .5s ease-in-out;
+    border-radius: 8px;
+    overflow: scroll;
+  }
+  .cart-container a{
+    text-decoration: none;
+    color: blue;
+  }
+  .cart-open{
+    right: -380px;
+  }
+  .cart-container h2{
+    font-family: "Probo";
+    font-size: 1.3rem;
+    margin: 10px;
+  }
+  .item-list{
+    margin: 10px;
+    border: 2px solid #cccccc;
+    width : 376px;
+    height: 70px;
+    display: flex;
+    border-radius: 6px;
+  }
+  .img-list{
+    width: 70px;
+    height: 70px;
+  }
+  .img-list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border-end-end-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .head-list{
+    margin: 10px;
+    font-family: "George";
+    font-weight: bolder;
+    color: #747474;
+  }
+  .item-list span{
+    position: relative;
+    right: -150px;
+    top: 23px;
+    color: red;
+  }
+
+
+
+ .view_details {
+   position: relative;
+   top: 45%;
+   margin: 10px 10px 10px;
+   padding: 10px;
+   font-size: 1.2rem;
+   font-family: "George";
+   border-style: double;
+   background-color: #F6F4F2;
+   color: rgb(0, 0, 0);
+   transition: all .5s ease-in-out;
+ }
+
+ .horizontal {
+   width: 70%;
+   position: relative;
+   top: 35%;
+   margin: 0;
+   color: #F3ECE6;
+   border-color: rgb(255, 255, 255);
+ }
+
+ .branded {
+   position: absolute;
+   top: 105vh;
+   height: 75vh;
+   width: 100vw;
+   text-align: center;
+ }
+
+ .branded_title {
+   font-family: "Montas";
+   position: relative;
+   top: 0;
+   margin-bottom: 70px;
+   font-size: 2rem;
+   color: #40313C;
+
+ }
+
+ .brand_product {
+   width: 97%;
+   height: 70%;
+   display: flex;
+   flex-direction: row;
+   margin: 0 auto 0;
+   justify-content: space-around;
+ }
+
+ .brand_1 {
+   width: 16.5vw;
+   height: 90%;
+   background-color: rgb(250, 239, 223);
+ }
+ .fala{
+  width: 96%;
+  margin-top: 5px;
+  height: 75%;
+  overflow: hidden;
+  margin-left: 5px;
+ }
+ .brand_1 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+ }
+
+ .rate{
+  width: 100%;
+  height: 25% ;
+  background-color: rgb(250, 239, 223);
+  z-index: 5;
+  text-align: left;
+}
+.rate button{
+  width: 90%;
+  height: 50%;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  border: 1.5px solid rgb(210, 210, 210);
+  background: #ffffff;
+  border-radius: 3px;
+  font-family: "George";
+  margin-left: 12.5px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.rate p{
+  font-family: "George";
+  margin-left: 12.5px;
+  font-weight: bolder;
+}
+
+
+
+ .big_img {
+   position: absolute;
+   margin-top: 50px;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(20, 18, 18);
+ }
+
+ .img_div {
+   position: relative;
+   top: 10vh;
+   width: 40vw;
+   height: 80vh;
+   left: 50vw;
+   background-color: #F3ECE6;
+ }
+
+ .img_div img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .bg_div {
+   width: 40vw;
+   height: 80vh;
+   background-color: #F6F4F2;
+   position: relative;
+   top: -70vh;
+   left: 10vw;
+   font-family: "George";
+   border-inline-start-style: double;
+   border-inline-end-style: double;
+   border-inline-start-width: 5px;
+   border-inline-end-width: 5px;
+   border-inline-color: rgb(134, 144, 141);
+   text-align: center;
+ }
+
+ .bg_div p {
+   font-size: 1.9rem;
+   position: relative;
+   top: 45%;
+   width: 95%;
+   text-align: center;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .bg_div button {
+   position: relative;
+   top: 25%;
+   padding: 10px;
+   font-size: 1.2rem;
+   font-family: "George";
+   border-style: double;
+   border-color: rgb(0, 0, 0);
+   background-color: rgb(134, 144, 141);
+   color: #F3ECE6;
+   transition: all .5s ease-in-out;
+ }
+ .view_details:hover{
+  background-color: rgb(86, 111, 112);
+ }
+ .bg_div button:hover{
+  background-color: rgb(86, 111, 112);
+ }
+
+ .img_pack {
+   margin-top: 100px;
+   width: 100vw;
+   height: 100vh;
+   background-color: #ffffff;
+   position: absolute;
+   top: 175vh;
+ }
+
+ .pack_bg {
+   width: 40vw;
+   height: 100%;
+   position: relative;
+   left: 3vw;
+   background-color: #40313C;
+ }
+
+ .pack_bg img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .imgcontain {
+   width: 21vw;
+   height: 60vh;
+   background-color: #F3ECE6;
+   position: relative;
+   top: -80vh;
+   left: 32vw;
+ }
+
+ .imgcontain img {
+   width: 90%;
+   height: 92%;
+   object-fit: cover;
+   margin-top: 15px;
+   border: 2px double #40313C;
+ }
+
+ .pack_btn {
+
+   position: relative;
+   top: -17%;
+   margin-left: 0px;
+   padding: 10px;
+   font-family: "George";
+   opacity: 0;
+   transition: opacity .35s ease;
+   border-style: double;
+   background-color: #F3ECE6;
+   color: #40313C;
+ }
+
+ .imgcontain:hover .pack_btn {
+   opacity: 1;
+   cursor: pointer;
+ }
+
+ .imgcontain:hover .material-symbols-outlined {
+   opacity: 1;
+   cursor: pointer;
+ }
+
+ .pack_details {
+   position: relative;
+   top: -140vh;
+   left: 60vw;
+   width: 35vw;
+   height: 60Vh;
+   text-align: left;
+ }
+
+ .pack_details p {
+   font-size: 3rem;
+   line-height: 3rem;
+   position: relative;
+   top: 4rem;
+   font-family: "Montas", sans-serif;
+ }
+
+ .pack_detail_btn {
+   margin: 100px 0px 10px;
+   padding: 10px;
+   font-size: 1.2rem;
+   font-family: "George";
+   border-style: double;
+   background-color: #F6F4F2;
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+ }
+
+ .branded2 {
+   position: absolute;
+   top: 410vh;
+   height: 65vh;
+   width: 100vw;
+   background-color: #ffffff;
+   text-align: center;
+ }
+
+ .branded2 .brand_product {
+   width: 94%;
+   height: 80%;
+   display: flex;
+   flex-direction: row;
+   margin: 0 auto 0;
+   justify-content: space-between;
+ }
+
+ .brand_2 {
+   width: 21.5vw;
+   height: 100%;
+   background-color: #F6F4F2;
+   overflow: hidden;
+   border: 2px double #40313C;
+ }
+
+ .branded2 .brand_1 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+   margin-top: -5px;
+   transform: scale(1.03);
+   transition: all 1s ease-in-out;
+ }
+
+ .branded2 .brand_1 img:hover {
+   transform: scale(1.1);
+ }
+
+
+
+
+
+ footer {
+   font-family: "George";
+   width: 100vw;
+   height: 40vh;
+   position: absolute;
+   top: 475vh;
+   background-color: rgb(20, 18, 18);
+   color: #ffffff;
+ }
+
+ footer ul {
+   margin: 60px 3% 0;
+   list-style: none;
+ }
+
+ footer ul li {
+   margin-top: 25px;
+   font-size: 2rem;
+ }
+
+ footer ul li .material-symbols-outlined {
+   position: relative;
+   left: -0px;
+   transform: scale(1.3);
+   opacity: 1;
+   background-color: transparent;
+   border: none;
+   transition: all .3s ease-in-out;
+   color: #ffffff;
+ }
+
+ footer ul li .material-symbols-outlined:hover {
+   color: #727272;
+   cursor: pointer;
+ }
+
+ footer .copyright {
+   position: relative;
+   top: 3vh;
+   text-align: center;
+ }
+
+
+ ul.transition {
+   display: flex;
+   position: absolute;
+   z-index: 100;
+   height: 100vh;
+   width: 100%;
+   top: 0;
+   left: 0;
+   margin: 0;
+   pointer-events: none;
+ }
+
+ ul.transition li {
+   list-style: none;
+   transform: scaleY(0);
+   background-color: rgb(255, 255, 255);
+   width: 20%;
+ }
+
+ button{
+  cursor: pointer;
+ }
